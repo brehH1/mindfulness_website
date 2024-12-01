@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>date tehtävä</title>
+</head>
+<body>
+<h1>Konsolissa näkyy lasku</h1>
+<script>
+  
+  function calculateYearDifference(startDate, endDate) {
+    const millisecondsPerYear = 365.25 * 24 * 60 * 60 * 1000;
+    const timeDifference = endDate - startDate;
+    const yearDifference = timeDifference / millisecondsPerYear;
+
+    return Math.floor(yearDifference);
+  }
+
+  const startDate = new Date('5/22/2007');
+  const endDate = new Date('11/22/2023');
+
+  const differenceInYears = calculateYearDifference(startDate, endDate);
+
+  console.log(`Näiden vuosien ero: ${startDate.toDateString()} and ${endDate.toDateString()} v: on ${differenceInYears} vuotta.`);
+</script>
+
+</body>
+</html>

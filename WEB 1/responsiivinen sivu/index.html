@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>HTML5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana,sans-serif;
+  font-size: 0.9em;
+margin: 0;
+}
+
+.otsikko{
+  width: 1400px;
+  padding: 2px;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.articl {
+ width: 600px;
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+}
+.borderi {
+  position: absolute;
+  top: 78px;
+  left: 88px;
+  padding: 20px;
+  margin: 5px;
+  background-color: lightgrey;
+
+}
+
+.articleee {
+  width: 600px;
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+}
+.borderi2 {
+  position: absolute;
+  left: 745px;
+  top: 78px;
+  padding: 20px;
+  margin: 5px;
+  background-color: lightgrey;
+
+}
+
+.navulli {
+  width: 80px; 
+  padding: 10px;
+ margin: 5px;
+ height: 480px;
+  border-style:ridge;
+  border-color: rgb(167, 163, 163)
+ 
+}
+
+.alaotsikko{
+    padding: 10px;
+    width: 1400px;
+    color: white;
+    background-color: black;
+    
+}
+@media screen and (max-width: 600px) {
+  .otsikko, .alaotsikko {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+   .borderi2,.articleee {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .borderi,.articl {
+    width: 50%;
+    
+
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+
+
+
+<div class="otsikko">
+  <h1>Monday Times</h1>
+</div>
+
+<div class="navulli" style="background-color:lightgrey;">
+  <p>News</p>
+  <p>Sports<p>
+  <p>Weather</p>
+  </div>
+
+<div class="borderi">
+  <h2>Uutiset</h2>
+  <div class="articleee">
+    <h2>News Article</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+  </div>
+  <div class="articleee">
+    <h2>News Article</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+  </div>
+</div>
+
+<div class="borderi2">
+    <h2>Tapahtumat</h2>
+    <div class="articl">
+      <h2>News Article</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+    </div>
+      <div class="articl">
+      <h2>News Article</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+    </div>
+</div>
+
+</div>
+
+<div class="alaotsikko">
+  <p>&copy; 2014 Monday Times. All rights reserved.</p>
+</div>
+
+
+</body>
+</html>

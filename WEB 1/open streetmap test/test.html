@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenStreetMap Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+<div id="map" style="height: 400px;"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    // Replace this address with the one you want to target
+    var targetAddress = "Puskaannokantie 99, 09630 Lohja";
+
+    // Use OpenStreetMap Nominatim for geocoding
+    var geocodeUrl = 'https://nominatim.openstreetmap.org/search?format=json&q=' + encodeURIComponent(targetAddress);
+
+    fetch(geocodeUrl)
+        .then(response => response.json())
+        .then(data => {
+            if (data && data.length > 0) {
+                var latitude = parseFloat(data[0].lat);
+                var longitude = parseFloat(data[0].lon);
+
+                // Initialize the map
+                var map = L.map('map').setView([latitude, longitude], 16);
+
+                // Add the OpenStreetMap layer
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap contributors'
+                }).addTo(map);
+
+                // Add a marker at the target location
+                L.marker([latitude, longitude]).addTo(map)
+                    .bindPopup(targetAddress).openPopup();
+            } else {
+                console.error('Could not geocode the address:', targetAddress);
+            }
+        })
+        .catch(error => console.error('Error fetching geocoding data:', error));
+</script>
+
+</body>
+</html>

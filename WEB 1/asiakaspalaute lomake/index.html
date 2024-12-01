@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          
+          body {
+  background-image: url('https://media.istockphoto.com/id/1161895689/fi/vektori/vaaleanpunainen-ruudullinen-kuviovektorin-tausta.jpg?s=612x612&w=0&k=20&c=lCxc1bPKxgIbwa95gYRITzADAWBp3WiyxadbeOh6KdA=');
+}
+
+
+        .Palaute{
+        color: rgb(54, 16, 16);
+        }
+
+        .otsikko{
+            position: relative;
+            top: 0;
+            left: 30%;
+        }
+
+        .Yhteystiedot{
+            position: absolute;
+            top: 0;
+            right: 50px;
+        }
+
+        textarea {
+  resize: none;
+}
+
+        </style>
+    </head>
+    <body>
+<div class="otsikko">
+<h1>Asiakaspalautelomake:</h1>
+</div>
+
+<div class="Palaute">
+
+        <p><label for="w3review"> <h4>Päivämäärä milloin kävit ravintolassamme:</h4></label></p>
+        <pre></pre>
+        <input type="text" id="fname" name="fname"><br><br>
+        
+        <form action="/action_page.php">
+            <label for="fname"><h4>Monta tuntia odotit ruokaa?</h4></label>
+            <pre></pre>
+            <input type="text" id="fname" name="fname"><br><br>
+        
+            <p><label for="w3review"> <h4>Anna palauttetta ruoan mausta, lämpötilasta, ulkonäöstä, hinnasta ja palvelusta:</h4></label></p>
+        <textarea id="w3review" name="w3review" rows="6" cols="60"></textarea>
+        <pre></pre>
+        <input type="submit" value="Submit">
+        <br>
+</div>
+      
+<div class="Yhteystiedot">
+    <h3>Yhteystiedot:</h3>
+    <form action="/action_page.php">
+        <label for="fname">Nimi:</label><br>
+        <input type="text" id="fname" name="fname" value="....."><br>
+    <pre></pre>
+        <label for="fname">Puhelinnumero:</label><br>
+        <input type="text" id="fname" name="fname" value="....."><br>
+    <pre></pre>
+        <label for="fname">Sähköpostiosoite:</label><br>
+        <input type="text" id="fname" name="fname" value="....."><br>
+    <pre></pre>   
+        <input type="submit" value="Submit">
+    </form> 
+</div>
+    </body>
+</html>

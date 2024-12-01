@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tic Tac Toe</title>
+  <meta charset="utfc8">
+</head>
+<style>
+    #page {
+  width: 50%;
+  margin: auto;
+  font-family: Helvetica-Neue, sans-serif;
+}
+
+#board {
+  text-align: center;
+  border-collapse: collapse;
+  border-style: hidden;
+  pointer-events: none;
+  table-layout: fixed
+}
+
+#board .row {
+  pointer-events: none;
+}
+
+#board .row .elem {
+  border: 5px solid black;
+  font-size: 1000%;
+  pointer-events: none;
+}
+
+#board .row .elem .clickable {
+  pointer-events: all;
+  color: white;
+}
+</style>
+
+
+<body>
+  <div id="page">
+    <table id="board" height="600" width="600">
+      <tr class="row">
+        <td class="elem"><span class="clickable" id="r0c0">X</span></td>
+        <td class="elem"><span class="clickable" id="r0c1">X</span></td>
+        <td class="elem"><span class="clickable" id="r0c2">X</span></td>
+      </tr>
+
+      <tr class="row">
+        <td class="elem"><span class="clickable" id="r1c0">X</span></td>
+        <td class="elem"><span class="clickable" id="r1c1">X</span></td>
+        <td class="elem"><span class="clickable" id="r1c2">X</span></td>
+      </tr>
+
+      <tr class="row">
+        <td class="elem"><span class="clickable" id="r2c0">X</span></td>
+        <td class="elem"><span class="clickable" id="r2c1">X</span></td>
+        <td class="elem"><span class="clickable" id="r2c2">X</span></td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>
